@@ -1,21 +1,20 @@
-// function 
-function findRectangleAream(firstValue, secondValue){
+// function
+function findTriangleArea(firstValue, secondValue) {
     if(typeof firstValue != 'number' || typeof secondValue != 'number'){
         return " please input the valid number";
     }
     if(firstValue < 1 || secondValue < 1){
         return "please input muste be 1 gatter then ";
+    }else{
+        var area = (firstValue*secondValue)/2;
+        return area;
     }
-    else{
-        var area = firstValue*secondValue;
-    }
-    return area;
+    
+
 }
-// input 
-var height = 21;
-var width = 56;
-
-
+// input
+const height = 2;
+const base = 5;
 // function calling
-var output = findRectangleAream(height,width);
+const output = findTriangleArea(height,base)
 console.log(output);
